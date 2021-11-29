@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+    <title>Binary Search Visualizer - Presentation</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./static/css/webslides.css"
+    />
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="static/css/svg-icons.css"
+    />
+    <meta name="twitter:image" content="static/images/share-webslides.jpg" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#333333" />
+    <style>
+      .on-hover:hover {
+        color: crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <main role="main">
+      <article id="webslides">
+        <!-- INTRO TO BSV SECTION -->
+        <section class="aligncenter slide current bg-trans-dark">
+          <h1>
+            <strong>Binary Search Visualizer</strong>
+          </h1>
+          <p class="text-intro">
+            A Binary Search Visualizer let you visualize how binary search works
+            by giving you the output of each iteartion.
+          </p>
+          <div class="wrap size-60">
+            <figure class="browser">
+              <img src="sample.gif" alt="preview of binary search visualizer" />
+            </figure>
+          </div>
+        </section>
+        <!-- INTRO TO BSV SECTION END -->
+        <!-- BINARY SEARCH SECTION -->
+        <section class="bg-black-blue slide current">
+          <div class="wrap size-100 bg-white radius fadeIn">
+            <h2>
+              <svg class="fa-info-circle large">
+                <use xlink:href="#fa-info-circle"></use>
+              </svg>
+              <strong>What is binary search?</strong>
+            </h2>
+            <hr />
+            <p>
+              In computer science, <b>binary search</b>, also known as
+              <b>half-interval search</b>, <b>logarithmic search</b>, or
+              <b>binary chop</b>, is a search algorithm that finds the position
+              of a target value within a sorted array.
+            </p>
+            <ul>
+              <li>
+                We are given an input array that is supposed to be sorted in
+                ascending order.
+              </li>
+              <li>
+                We take two variables which will act as a pointer i.e, beg, and
+                end.
+              </li>
+              <li>
+                Beg will be assigned with 0 and the end will be assigned to the
+                last index of the array.
+              </li>
+              <li>
+                Now we will introduce another variable mid which will mark the
+                middle of the current array. That will be computed as
+                (low+high)/2.
+              </li>
+              <li>
+                If the element present at the mid index is equal to the element
+                to be searched, then just return the mid index.
+              </li>
+              <li>
+                If the element to be searched is smaller than the element
+                present at the mid index, move end to mid-1, and all RHS will
+                get discarded.
+              </li>
+              <li>
+                If the element to be searched is greater than the element
+                present at the mid index, move beg to mid+1, and all LHS will
+                get discarded.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- BINARY SEARCH SECTION END -->
+        <!-- LIVE DEMO SECTION -->
+        <section class="bg-white">
+          <div class="wrap fadeInUp">
+            <div class="content-center">
+              <h1><strong>Lets see a live demo...</strong></h1>
+              <ul class="flexblock specs">
+                <li>
+                  <div>
+                    <h2 class="on-hover">
+                      <svg class="fa-link">
+                        <use xlink:href="#fa-link"></use>
+                      </svg>
+                      https://binary-search-visualization.netlify.app/
+                    </h2>
+                    Visit above link to do it yourself along with me.
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2 class="on-hover">
+                      <svg class="fa-text-height">
+                        <use xlink:href="#fa-github"></use>
+                      </svg>
+                      https://github.com/faris-xhan/binary-search-visualizer
+                    </h2>
+                    Visit this link to go through source code.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- end .content-center -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <!-- LIVE DEMO SECTION END -->
+        <!-- TECHNOLOGY USED  SECTION -->
+        <section class="bg-trans-dark">
+          <div class="wrap aligncenter">
+            <h3><strong>What is used to built this?</strong></h3>
+            <p class="text-intro">
+              This project was built using react.js, react-bootstrap and
+              javascript.
+            </p>
+          </div>
+          <div class="wrap">
+            <div class="grid">
+              <div class="column">
+                <a href="#" title="Link" style="color: #41e0fd">
+                  <img src="/icons/bootstrap.svg" alt="" />
+                  <h3><strong>React Bootstrap</strong></h3>
+                </a>
+                <p>
+                  React-bootstrap is a front-End Stylesheet library. this
+                  library builds with two libraries one is react. js and
+                  secondly bootstrap.
+                </p>
+              </div>
+              <div class="column">
+                <a href="#" title="Link" style="color: #61dafb">
+                  <img src="/icons/react.svg" alt="" />
+                  <h3><strong>React.js</strong></h3>
+                </a>
+                <p>
+                  React is a free and open-source front-end JavaScript library
+                  for building user interfaces based on UI components.
+                </p>
+              </div>
+              <div class="column">
+                <a href="#" title="Link" style="color: #f0db4f">
+                  <img src="/icons/js.svg" alt="" />
+                  <h3><strong>Javascript</strong></h3>
+                </a>
+                <p>
+                  JavaScript is a scripting or programming language that allows
+                  you to implement complex features on web pages
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- TECHNOLOGY USED SECTION END -->
+        <!-- QUESTION SECTION -->
+        <section class="bg-brown">
+          <div class="wrap">
+            <h1><strong>Got any question in your mind?</strong></h1>
+          </div>
+        </section>
+        <!-- QUESTION SECTION END-->
+
+        <!-- THANK YOU  -->
+        <section class="bg-black-blue">
+          <div class="wrap aligncenter">
+            <h2 class="text-emoji zoomIn">🥰</h2>
+            <h3><strong>Thank you!</strong></h3>
+          </div>
+          <div class="wrap">
+            <div class="content-center">
+              <p>
+                Feel free to reach out to me for any suggestions or just for
+                some interesting discussion.(hopefully)
+              </p>
+              <ul class="flexblock metrics">
+                <li>
+                  <div>
+                    <svg class="fa-github">
+                      <use xlink:href="#fa-github"></use>
+                    </svg>
+                    @faris-xhan
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <svg class="fa-twitter" style="color: #61dafb">
+                      <use xlink:href="#fa-twitter"></use>
+                    </svg>
+                    @nemoxhan
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <svg class="fa-phone" style="color: crimson">
+                      <use xlink:href="#fa-envelope"></use>
+                    </svg>
+                    nemoxhan@gmail.com
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- THANK YOU `END` -->
+      </article>
+    </main>
+    <script src="/static/js/webslides.js"></script>
+    <script>
+      window.ws = new WebSlides();
+    </script>
+    <script defer src="static/js/svg-icons.js"></script>
+  </body>
+</html>
